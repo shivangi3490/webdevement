@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Glazen</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<script src="scriptFile.js"></script>
+</head>
+<!-- background contain an image  
+	 a menu bar and 3 category page -->
+<body>
+<br>
+<!-- slide show of images -->
+<h2 class="heading"><center> Glazen: Transparent as Glass</center></h2>
+<br>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="slideshow1.jpg" style="width:100%">
+  <img class="mySlides" src="slideshow2.jpg" style="width:100%">
+  <img class="mySlides" src="slideshow3.jpg" style="width:100%">
+  
+  
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>  
+</div>
+<br><br>
+<!-- menu bar HOME | Gallery |About Us  -->
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>  
+  <li><a href="aboutUs.html">About us</a></li>
+  <li ><a href="gallery.html">Gallery</a></li>
+</ul><br>
+
+<!-- Div   -->
+<div class="aboutGlass">
+	<div class="description">
+	<img class="pictureRight" src="slideshow1.jpg">
+		At some point along every wine drinker’s arc of discovery, the time comes to invest in a set of glasses.
+
+Choosing the right one may seem complicated, confusing and occasionally overwhelming. The process can be fraught with anxiety, as many different glass styles are available, and points of view clash on what is proper and necessary.
+
+Corkscrew aside, a stemmed glass is the only indispensable piece of equipment needed to enjoy the best a bottle has to offer, and the least expensive, easiest way to invest in better drinking is to buy a good set. Not that wine can’t be consumed without them.
+	</div>
+</div>
+<br>
+<div class="aboutGlass">
+	<div class="description">
+	<img class="pictureLeft" src="slideshow1.jpg">
+		At some point along every wine drinker’s arc of discovery, the time comes to invest in a set of glasses.
+
+Choosing the right one may seem complicated, confusing and occasionally overwhelming. The process can be fraught with anxiety, as many different glass styles are available, and points of view clash on what is proper and necessary.
+
+Corkscrew aside, a stemmed glass is the only indispensable piece of equipment needed to enjoy the best a bottle has to offer, and the least expensive, easiest way to invest in better drinking is to buy a good set. Not that wine can’t be consumed without them.
+	</div>
+</div>
+<br>
+<div class="aboutGlass">
+	<div class="description">
+	<img class="pictureRight" src="slideshow1.jpg">
+		At some point along every wine drinker’s arc of discovery, the time comes to invest in a set of glasses.
+
+Choosing the right one may seem complicated, confusing and occasionally overwhelming. The process can be fraught with anxiety, as many different glass styles are available, and points of view clash on what is proper and necessary.
+
+Corkscrew aside, a stemmed glass is the only indispensable piece of equipment needed to enjoy the best a bottle has to offer, and the least expensive, easiest way to invest in better drinking is to buy a good set. Not that wine can’t be consumed without them.
+	</div>
+</div>
+
+
+
+
+<!-- Javascript slide show of images -->
+<!--<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+  
+}
+
+</script>-->
+
+<script src="scriptFile.js"></script>
+<!-- Footer contain Contact info -->
+</body>
+</html>

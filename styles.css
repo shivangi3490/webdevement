@@ -1,0 +1,204 @@
+:root {
+  --color-white: #f3f3f3;
+  --color-yellow: #effd60;
+  --color-yellow-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+
+body::before{
+ content: '';
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background: var(--color-yellow);
+ background-image: linear-gradient(
+      115deg,
+      rgba(65,97,68, 0.7),
+      rgba(136, 136, 206, 0.8)
+    ),
+    url(backgroundImages.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.heading{
+	position: relative;
+	padding-top:8px;
+}
+/*slideshow style*/
+.w3-content{margin-left:auto;margin-right:auto;max-width:980px}
+.w3-hover-text-khaki:hover{color:#b4aa50!important}
+.mySlides {display:none}
+.w3-left{float:left!important;padding-left:2px;}.w3-right{float:right!important;padding-right:2px;}
+
+.w3-border{border:1px solid grey!important}
+.w3-hover-white:hover{color:black!important;background-color:black!important}
+.slideShowDiv,.w3-display-container,h1{
+	position:relative;
+}
+.w3-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.w3-center{text-align:center!important}
+.w3-section{margin-top:16px!important;margin-bottom:16px!important}
+.w3-container{padding:0.01em 16px}
+.w3-large{font-size:18px!important}
+.w3-container:before,.w3-container:after{content:"";display:table;clear:both}
+.w3-transparent{background-color:transparent!important}
+.w3-badge{background-color:red;color:blue;display:inline-block;padding-left:8px;padding-right:8px;text-align:center;border-radius:50%}
+.w3-display-container:hover .w3-display-hover{display:block}.w3-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
+.w3-display-position{position:absolute}
+.mySlides{
+	width: 300px;
+	height:500px;
+	border-radius:3px; 
+}
+.w3-display-container:hover .w3-display-hover{display:block}
+.container{
+ position: relative;
+  text-align: center;
+}
+
+/* menu bar */
+ul{
+	position:relative;
+	width: 805px;
+	height:55px;
+	left:360px;
+	border-radius:3px; 
+	margin-left:30px;margin-right:auto;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 100px 20px 100px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+/* About glass*/
+.aboutGlass{
+	
+	position:relative;
+	border: 1px solid black;
+	width: 805px;
+	left:360px;
+	padding:10px;
+}
+.description{
+	padding:4px;
+}
+.pictureLeft{
+	padding:4px 7px 4px 4px;
+	height:18%;
+	width:20%;
+	float:left;
+}
+.pictureRight{
+	padding:3px;
+	height:18%;
+	width:20%;
+	float:right;
+}
+.aboutUs{
+	position:relative;
+	border: 1px solid black;
+	width: 780px;
+	left:360px;
+	padding:10px;
+	border-radius:5px;
+}
+.aboutUsLabel{
+	text-decoration: bold;
+	padding:2px;
+	
+}
+
+/* Gallery  */
+.grid { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  position:relative;
+  }
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.grid > article img {
+  max-width: 100%;
+   
+}
+
+.text {
+  padding: 0 20px 20px;
+}
+.text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+.modal-content >img{
+	width:100%;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
