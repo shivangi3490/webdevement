@@ -8,11 +8,14 @@
 <h2 class="heading"><center> Glazen: Transparent as Glass</center></h2>
 <br>
 <!-- menu bar HOME | Gallery |About Us  -->
-<ul class="topnav">
-  <li><a  href="homePage.html">Home</a></li>  
-  <li><a  href="aboutUs.html">About us</a></li>
-  <li ><a class="active" href="#gallery">Gallery</a></li>
-</ul><br>
+<div class="topnav" id="myTopnav">
+  <a href="homePage.html">Home</a> 
+  <a href="aboutUs.html">About us</a>
+  <a class="active" href="#gallery">Gallery</a>
+  <a href="javascript:void(0);" class="icon" onclick="menuResponsive()">
+	&#9776;
+  </a>
+</div><br>
 <!-- Gallery Grid  -->
 <main class="grid">
 	<!-- Div of image -->
@@ -21,7 +24,7 @@
 		<div class="text">
 		  <h3>Name of Model</h3>
 		  <p>Description</p>
-		  <button id="imgHover" onClick="hoverFun()" >click here to zoom</button>
+		  <button id="imgHover" onClick="detailFun()" >click here to zoom</button>
 		</div>
 	  </article>
 	  <!-- Click button to zoom-->
@@ -32,7 +35,7 @@
 			<h3>Name of Model</h3>
 		  <p>Description</p>
 		</div>
-	</div>
+	  </div>
 	
 	<!-- Div of image -->
 	  <article>
@@ -40,10 +43,10 @@
 		<div class="text">
 		  <h3>Name of Model</h3>
 		  <p>Description</p>
-		  <button id="imgHover" onClick="hoverFun()" >click here to zoom</button>
+		  <button>Here's how</button>
 		</div>
 	  </article>
-	<!-- Click button to zoom-->
+	   <!-- Click button to zoom-->
 	  <div id="myModal" class ="modal">
 		<div class="modal-content">
 			<span class="close">&times;</span>
@@ -51,18 +54,18 @@
 			<h3>Name of Model</h3>
 		  <p>Description</p>
 		</div>
-	</div>
+	  </div>
 	  
 	<!-- Div of image -->
 	  <article>
 		<img src="slideshow1.jpg" alt="Sample photo">
 		<div class="text">
-		  <h3>Name of Modal</h3>
-		  <p>Description</p>
-		  <button id="imgHover" onClick="hoverFun()" >click here to zoom</button>
+		  <h3>Dynamically Procrastinate</h3>
+		  <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+		  <button>Read more</button>
 		</div>
 	  </article>
-	<!-- Click button to zoom-->
+	   <!-- Click button to zoom-->
 	  <div id="myModal" class ="modal">
 		<div class="modal-content">
 			<span class="close">&times;</span>
@@ -70,45 +73,45 @@
 			<h3>Name of Model</h3>
 		  <p>Description</p>
 		</div>
-	</div>
+	  </div>
 	  
 	 <!-- Div of image -->
 	  <article>
 		<img src="slideshow1.jpg" alt="Sample photo">
 		<div class="text">
-		  <h3>Name of Modal</h3>
-		  <p>Description</p>
-		  <button id="imgHover" onClick="hoverFun()" >click here to zoom</button>
+		  <h3>Best in class</h3>
+		  <p>jumping into that boat, and just letting it sail wherever the wind takes you...</p>
+		  <button>Just do it...</button>
 		</div>
 	  </article>
-	<!-- Click button to zoom-->
+	 <!-- Click button to zoom-->
 	  <div id="myModal" class ="modal">
 		<div class="modal-content">
 			<span class="close">&times;</span>
 			<img src="slideshow1.jpg" alt="Sample photo">
-			<h3>Name of Model</h3>
+			<h3>Best in class</h3>
 		  <p>Description</p>
 		</div>
-	</div>
+	  </div>
 	  
 	  <!-- Div of image -->
 	  <article>
 		<img src="slideshow1.jpg" alt="Sample photo">
 		<div class="text">
-		  <h3>Name of Modal</h3>
-		  <p>Desciption</p>
-		  <button id="imgHover" onClick="hoverFun()" >click here to zoom</button>
+		  <h3>Dynamically innovate supply chains</h3>
+		  <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+		  <button>Here's why</button>
 		</div>
 	  </article>
-	<!-- Click button to zoom-->
+	   <!-- Click button to zoom-->
 	  <div id="myModal" class ="modal">
 		<div class="modal-content">
 			<span class="close">&times;</span>
 			<img src="slideshow1.jpg" alt="Sample photo">
-			<h3>Name of Model</h3>
-		  <p>Description</p>
+			<h3>Dynamically innovate supply chains</h3>
+		  <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
 		</div>
-	</div>
+	  </div>
 	  
 </main>
 
